@@ -37,7 +37,8 @@ const App: () => React$Node = () => {
         <Button
           title={'Get Cropped View'}
           onPress={() => {
-            cropViewRef.current.saveImage(90);
+            cropViewRef.current.saveImage(true,90);
+            // cropViewRef.current.rotateImage(true)
           }}
         />
       </View>
